@@ -1,14 +1,12 @@
 #include <stdio.h>
 #include <string.h>
-#define MAX 1024
+#include <stdlib.h>
 
-
-
-
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
     FILE *file;
-    char line[MAX];
+    char *line;
+    size_t bufsize = 254;
 
     //Check's if no command line arguments are passed
     if(argc == '\0'){
@@ -20,20 +18,24 @@ int main(int argc, char **argv)
         file = stdin;
     }
 
+    line = (char *)malloc(bufsize*sizeof(char));
+    if(line == NULL){
+	perror("Unable to allocate linebuffer");
+	exit(1);
+    }
 
-    for(int i=1; i < argc; i++)
+
+    for(int i=2; i < argc; i++)
     {
         if((file = fopen(argv[i], "r")) == NULL)
         {
             printf("my-grep: cannot open file\n");
             exit(1);
         }
-
-        fclose(file);
     }
 
     //Go through the file line by line and find the searched term
-    while(get_line(line,MAX)){
+    while(getline(&line,&bufsize,file) != -1){
         if(strstr(line,argv[1]) != NULL){
             printf("%s", line);
         }

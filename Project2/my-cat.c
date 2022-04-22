@@ -4,7 +4,7 @@
 #include <errno.h>
 
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
     FILE *file;
     char buff;
