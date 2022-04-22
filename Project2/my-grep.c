@@ -11,7 +11,7 @@ int main(int argc, char **argv)
     char line[MAX];
 
     //Check's if no command line arguments are passed
-    if(argc == NULL){
+    if(argc == '\0'){
         printf("my-grep: searchterm [file ...]\n");
         exit(1);
     }
