@@ -8,7 +8,7 @@ This documentation contains examples of how to run the projects after cloning th
 
 PROJECT 1 WARMUP TO C AND UNIX PROGRAMMING:
 
-Go to the Project1 folder and in the folder, you can input the following commands:
+Go to the Project1 folder and in terminal, you can input the following commands:
 
 prompt> ./reverse
 
