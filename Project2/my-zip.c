@@ -30,11 +30,14 @@ int main(int argc, char *argv[]){
         //Goes through all the characters in the file
         while(fread(str, 1, 1,file)){
 
+
             //Checks if the next is the same as the current character, if so, increases count by 1
+            //Used https://www.youtube.com/watch?v=jAsGAQbdV-Y as reference for the comparing of current and previous characters
             if(strcmp(current,str) == 0){
                 count++;
             }
             //Writes the previous characters and count to the stdout if the previous character is not the same as the current
+            //Used https://www.youtube.com/watch?v=jAsGAQbdV-Y here as reference for resetting the current char and its counter
             else{
                 fwrite(&count,sizeof(count),1,stdout);  
                 fwrite(str, 1, 1, stdout);
