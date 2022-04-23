@@ -1,7 +1,9 @@
 Authors: Joona Pellinen and Altti Väätäinen
+
 Tested on Ubuntu 20.04.4 LTS
 
 This is repository contains three different miniprojects and README.md file.
+
 This documentation contains examples of how to run the projects after cloning this repository to your own local device.
 
 
