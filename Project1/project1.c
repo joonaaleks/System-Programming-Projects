@@ -30,6 +30,7 @@ node *fileReader(FILE *file)
 }
 
 //Reverse linked list function
+//In this part geeksforgeeks was used as a source
 static void reverse(struct node **i)
 {
     struct node *next = NULL;
@@ -48,6 +49,7 @@ static void reverse(struct node **i)
 }
 
 //Write the linked list into the output file
+//In this part stackoverflow was used as a source
 void writeToFile(node *i, FILE *file)
 {
     if (i != NULL)
