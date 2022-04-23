@@ -8,7 +8,10 @@ This documentation contains examples of how to run the projects after cloning th
 
 PROJECT 1 WARMUP TO C AND UNIX PROGRAMMING:
 
-You can compile all files with gcc.
+You can compile all files with gcc:
+
+prompt> gcc reverse.c -o reverse
+
 
 Go to the Project1 folder and in terminal, you can input the following commands:
 
@@ -27,7 +30,15 @@ When executed with two command-line arguments, the program reads from the input 
 
 PROJECT 2 UNIX UTILITIES
 
-Go to the Project 2 folder and in terminal, you can input the following commands:
+Go to the Project 2 folder and in terminal, you can input the following commands to compile the programs:
+
+prompt> gcc my-cat.c -o my-cat.s
+
+prompt> gcc my-grep.c -o my-grep.s
+
+prompt> gcc my-zip.c -o my-zip.exe
+
+Then input the following commands to run the programs:
 
 prompt> ./my-cat.s input.txt
 
