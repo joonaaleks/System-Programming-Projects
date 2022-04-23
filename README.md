@@ -22,6 +22,7 @@ When executed with one command-line argument, the program writes the given file 
 
 When executed with two command-line arguments, the program reads from the input file, reverses the file contenta, and writes it into the standard output and output file.
 
+
 PROJECT 2 UNIX UTILITIES
 
 Go to the Project 2 folder and in terminal, you can input the following commands:
@@ -32,7 +33,9 @@ prompt> ./my-grep.s ooo input.txt
 
 prompt> ./my-zip.exe input.txt
 
+
 PROJECT 4 KERNEL HACKING:
+
 The original OS was downloaded from https://github.com/mit-pdos/xv6-public. All the changes were made to the original OS, see the documentation for the changelog.
 If you don't have qemu installed on your system, run command "sudo apt install qemu".
 If you are using 64 bit OS, you have a high change that the system is unable to find a working qemu executable.
