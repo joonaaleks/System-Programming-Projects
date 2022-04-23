@@ -6,8 +6,11 @@ This is repository contains three different miniprojects and README.md file.
 
 This documentation contains examples of how to run the projects after cloning this repository to your own local device.
 
+PROJECT 1 WARMUP TO C AND UNIX PROGRAMMING:
 
-PROJECT 4 KERNEL:
+
+
+PROJECT 4 KERNEL HACKING:
 The original OS was downloaded from https://github.com/mit-pdos/xv6-public. All the changes were made to the original OS, see the documentation for the changelog.
 If you don't have qemu installed on your system, run command "sudo apt install qemu".
 If you are using 64 bit OS, you have a high change that the system is unable to find a working qemu executable.
