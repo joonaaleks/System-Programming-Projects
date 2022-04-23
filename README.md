@@ -7,7 +7,19 @@ This is repository contains three different miniprojects and README.md file.
 This documentation contains examples of how to run the projects after cloning this repository to your own local device.
 
 PROJECT 1 WARMUP TO C AND UNIX PROGRAMMING:
+Go to the Project1 folder and in the folder, you can input the following commands:
 
+prompt> ./reverse
+
+prompt> ./reverse input.txt
+
+prompt> ./reverse input.txt output.txt
+
+When executed with no command-line arguments, the program reads from standard input and writes to standard output.
+
+When executed with one command-line argument, the program writes the given file into the standard output.
+
+When executed with two command-line arguments, the program reads from the input file, reverses the file contenta, and writes it into the standard output and output file.
 
 
 PROJECT 4 KERNEL HACKING:
