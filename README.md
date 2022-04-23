@@ -7,6 +7,7 @@ This is repository contains three different miniprojects and README.md file.
 This documentation contains examples of how to run the projects after cloning this repository to your own local device.
 
 PROJECT 1 WARMUP TO C AND UNIX PROGRAMMING:
+
 Go to the Project1 folder and in the folder, you can input the following commands:
 
 prompt> ./reverse
