@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define MAX 1024
+#define MAX 100
 
 
 int main(int argc, char *argv[]){
 
     FILE *file;
     char str[MAX];
-    char current= str[0];
+    char current[MAX];
     int count=1;
     
     
@@ -29,21 +29,22 @@ int main(int argc, char *argv[]){
         }
         //Goes through all the characters in the file
         while(fread(str, 1, 1,file)){
-            //Checks if the is the same as the current character, if so, increases count by 1
-            if(str[i]==current){
+
+            //Checks if the next is the same as the current character, if so, increases count by 1
+            if(strcmp(current,str) == 0){
                 count++;
             }
             //Writes the previous characters and count to the stdout if the previous character is not the same as the current
             else{
-                fwrite(&count,sizeof(count),1,stdout);
-                fwrite(&current, 1, 1, stdout);
+                fwrite(&count,sizeof(count),1,stdout);  
+                fwrite(str, 1, 1, stdout);
                 //Reset the current char and the count
-                current=str[i];
+                strcpy(current,str);
                 count=1;
             }
         }
         fclose(file);
     }
-    fclose(file);
+    
     return 0;
 }
